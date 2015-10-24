@@ -6,20 +6,20 @@ import BadGuy from './badguy';
 
 
 // Good Guy Instance
-let mario = new GoodGuy();
+let x = new GoodGuy();
 
 // Bad Guy Instance
 let bowser = new BadGuy();
 
 
 // DOM Nodes Selected
-let ggHealth = $('#myhealth');
-let bgHealth = $('#bosshealth');
+let ggHealth = $('.ggHealth');
+let bgHealth = $('.bgHealth');
 
 let ggAttack = $('#ggAttack');
 
 // Show current (default) health
-ggHealth.text(mario.health);
+ggHealth.text(x.health);
 bgHealth.text(bowser.health);
 
 
@@ -33,13 +33,13 @@ ggAttack.on('click', function () {
 
   if (bowser.health <= 0) {
     bgHealth.text('Defeated');
-    alert('Mario Wins!!')
+    alert('X Wins!!')
   } else {
     bgHealth.text(bowser.health);
-    alert('Bowser Fights Back!!!');
-    mario.hit(10);
+    // alert('Bowser Fights Back!!!');
+    x.hit(10);
     ggHealth.css('color', 'red');
-    ggHealth.text(mario.health);
+    ggHealth.text(x.health);
     setTimeout( function () {
       ggHealth.css('color', 'black');
     }, 1000);

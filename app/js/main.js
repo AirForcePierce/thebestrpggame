@@ -58,19 +58,19 @@ var _badguy = require('./badguy');
 var _badguy2 = _interopRequireDefault(_badguy);
 
 // Good Guy Instance
-var mario = new _goodguy2['default']();
+var x = new _goodguy2['default']();
 
 // Bad Guy Instance
 var bowser = new _badguy2['default']();
 
 // DOM Nodes Selected
-var ggHealth = (0, _jquery2['default'])('#myhealth');
-var bgHealth = (0, _jquery2['default'])('#bosshealth');
+var ggHealth = (0, _jquery2['default'])('.ggHealth');
+var bgHealth = (0, _jquery2['default'])('.bgHealth');
 
 var ggAttack = (0, _jquery2['default'])('#ggAttack');
 
 // Show current (default) health
-ggHealth.text(mario.health);
+ggHealth.text(x.health);
 bgHealth.text(bowser.health);
 
 // Setting up ON Events
@@ -83,13 +83,13 @@ ggAttack.on('click', function () {
 
   if (bowser.health <= 0) {
     bgHealth.text('Defeated');
-    alert('Mario Wins!!');
+    alert('X Wins!!');
   } else {
     bgHealth.text(bowser.health);
-    alert('Bowser Fights Back!!!');
-    mario.hit(10);
+    // alert('Bowser Fights Back!!!');
+    x.hit(10);
     ggHealth.css('color', 'red');
-    ggHealth.text(mario.health);
+    ggHealth.text(x.health);
     setTimeout(function () {
       ggHealth.css('color', 'black');
     }, 1000);

@@ -3,6 +3,7 @@
 <head>
   <title>Hello, World</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -20,20 +21,39 @@
     <div class="healthbars">
       <div class="myhealth">
         <p class="yourhtext">My Health</p>
-        <progress id="myhealth" value="100" max="100">100</progress>
+        <div class="myhealthbar">
+          <p>
+          Me:  <span class="ggHealth"></span>
+          </p>
+        </div>
       </div>
       <div class="bosshealth">
         <p class="bosshtext">Boss</p>
-        <progress id="bosshealth" value="100" max="100">100</progress>
+        <div class="myhealthbar">
+          <p>
+          Boss:  <span class="bgHealth"></span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="menubuttons">
-      <input type="button" value="Attack" class="menubtn" id="ggAttack">
+      <input type="button" value="Attack" class="menubtn shake" id="ggAttack">
       <input type="button" value="Defend" class="menubtn">
       <input type="button" value="Potion" class="menubtn">
       <input type="button" value="Run Fool!" class="menubtn">
     </div>
   </div>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" language="javascript">
+
+         $(document).ready(function() {
+
+            $("#ggAttack").click(function(){
+               $(".baddie1").effect( "shake", {times:4}, 1000 );
+            });
+         });
+      </script>
 </body>
 </html>

@@ -6,6 +6,60 @@ body {
   background: #e2ebf3;
 }
 
+.baddie1 {
+  width: 60%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.hero {
+  width: 30%;
+  margin-left: 30%;
+  margin-top: 30%;
+}
+
+//Container that has battlefield image and good and bad guy images
+
 .container {
-  background-image: url('/images/firstbgimage.jpg');
+  @include outer-container;
+  // height: 70%;
+  margin: 0 auto;
+  background: url('../images/firstbgimage.jpg');
+  background-size: 100%;
+}
+
+.badmanside {
+  width: 50%;
+  height: 70%;
+  overflow: hidden;
+  @include span-columns(6);
+  // border: 2px solid black;
+}
+
+.goodmanside {
+  width: 50%;
+  height: 70%;
+  @include span-columns(6);
+  // border: 2px solid black;
+}
+
+//Div with all health bars and menu options
+
+.rpgelements {
+  @include outer-container;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background-color: gray;
+  border: 2px solid black;
+}
+
+//Health Bars
+.healthbars {
+  @include span-columns(4);
+}
+
+progress[value] {
+  width: 100%;
+  height: 20px;
 }

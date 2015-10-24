@@ -2029,7 +2029,73 @@ html {
 body {
   background: #e2ebf3; }
 
+.baddie1 {
+  width: 60%;
+  margin-left: 30%;
+  margin-top: 10%; }
+
+.hero {
+  width: 30%;
+  margin-left: 30%;
+  margin-top: 30%; }
+
 .container {
-  background-image: url("/images/firstbgimage.jpg"); }
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  background: url("../images/firstbgimage.jpg");
+  background-size: 100%; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.badmanside {
+  width: 50%;
+  height: 70%;
+  overflow: hidden;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .badmanside:last-child {
+    margin-right: 0; }
+
+.goodmanside {
+  width: 50%;
+  height: 70%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .goodmanside:last-child {
+    margin-right: 0; }
+
+.rpgelements {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background-color: gray;
+  border: 2px solid black; }
+  .rpgelements::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.healthbars {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .healthbars:last-child {
+    margin-right: 0; }
+
+progress[value] {
+  width: 100%;
+  height: 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -64,10 +64,10 @@ var mario = new _goodguy2['default']();
 var bowser = new _badguy2['default']();
 
 // DOM Nodes Selected
-var ggHealth = (0, _jquery2['default'])('.ggHealth');
-var bgHealth = (0, _jquery2['default'])('.bgHealth');
+var ggHealth = (0, _jquery2['default'])('#myhealth');
+var bgHealth = (0, _jquery2['default'])('#bosshealth');
 
-var ggAttack = (0, _jquery2['default'])('.ggAttack');
+var ggAttack = (0, _jquery2['default'])('#ggAttack');
 
 // Show current (default) health
 ggHealth.text(mario.health);

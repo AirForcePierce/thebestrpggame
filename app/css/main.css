@@ -2079,8 +2079,7 @@ body {
   margin: 0 auto;
   width: 100%;
   height: 150px;
-  background-color: gray;
-  border: 2px solid black; }
+  background-color: gray; }
   .rpgelements::after {
     clear: both;
     content: "";
@@ -2097,5 +2096,21 @@ body {
 progress[value] {
   width: 100%;
   height: 20px; }
+
+.menubuttons {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  overflow: hidden; }
+  .menubuttons:last-child {
+    margin-right: 0; }
+
+.menubtn {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 75px;
+  border: 1px solid green; }
 
 /*# sourceMappingURL=main.css.map */

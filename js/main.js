@@ -13,10 +13,10 @@ let bowser = new BadGuy();
 
 
 // DOM Nodes Selected
-let ggHealth = $('.ggHealth');
-let bgHealth = $('.bgHealth');
+let ggHealth = $('#myhealth');
+let bgHealth = $('#bosshealth');
 
-let ggAttack = $('.ggAttack');
+let ggAttack = $('#ggAttack');
 
 // Show current (default) health
 ggHealth.text(mario.health);
@@ -47,11 +47,3 @@ ggAttack.on('click', function () {
 
   console.log(bowser);
 });
-
-
-
-
-
-
-
-

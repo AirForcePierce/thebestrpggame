@@ -51,7 +51,7 @@ body {
   width: 100%;
   height: 150px;
   background-color: gray;
-  border: 2px solid black;
+  // border: 2px solid black;
 }
 
 //Health Bars
@@ -62,4 +62,19 @@ body {
 progress[value] {
   width: 100%;
   height: 20px;
+}
+
+
+//Menu Buttons (Attacks and such)
+.menubuttons {
+  @include span-columns(8);
+  overflow: hidden;
+}
+
+.menubtn {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 75px;
+  border: 1px solid green;
 }

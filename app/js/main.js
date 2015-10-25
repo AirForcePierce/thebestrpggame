@@ -83,7 +83,8 @@ ggAttack.on('click', function () {
 
   if (bowser.health <= 0) {
     bgHealth.text('Defeated');
-    alert('X Wins!!');
+    // alert('X Wins!!');
+    (0, _jquery2['default'])("body").removeClass("visible").addClass("blackout");
   } else {
     bgHealth.text(bowser.health);
     // alert('Bowser Fights Back!!!');

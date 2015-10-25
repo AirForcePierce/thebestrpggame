@@ -2026,8 +2026,14 @@ html {
 .fa-fonticons:before {
   content: ""; }
 
-body {
-  background: #e2ebf3; }
+.visible {
+  visibility: visible;
+  background-color: #e2ebf3; }
+
+.blackout {
+  visibility: hidden;
+  background-color: black;
+  transition: all 5s ease; }
 
 .baddie1 {
   width: 60%;
